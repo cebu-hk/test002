@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TweetApp</title>
+    <title>We love Tequila</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,11 +11,17 @@
   <body>
   <header>
       <div class="header-logo">
-        <%= link_to("旅とも","/") %>
+        <%= link_to("Top","/") %>
       </div>
       <ul class="header-menus">
         <li>
-        <%= link_to("About 旅とも","/about") %>
+        <%= link_to("About us","/about") %>
+        </li>
+        <li>
+          <%= link_to("Index", "/posts/index") %>
+        </li>
+        <li>
+          <%= link_to("New Post", "/posts/new") %>
         </li>
       </ul>
   </header>
