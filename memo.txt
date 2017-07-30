@@ -26,4 +26,8 @@ https://www.udemy.com/ruby-on-rails-5-jp/
 2."bundle update rails”
 3."rails app:update" →設定を問われるのでひたすら"Y"を入力
 
+■ステージング環境の作り方
+概要：http://blog.ruedap.com/2011/05/04/ruby-heroku-web-app-development-tips-6
+作り方：http://blog.ruedap.com/2011/02/20/ruby-heroku-staging-enviroment
+
 EOF
