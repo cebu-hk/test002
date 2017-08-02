@@ -15,10 +15,10 @@ http://qiita.com/HideakiSaito/items/5be1a45870a4c3d1a3c7#13cloud9%E3%81%8B%E3%82
 ■DBを初期設定のsqlite3からpostgresqlに変更する手順
 https://dashboard.heroku.com/apps/cebu-hk-002/deploy/github
 
-■HerokuへのDBマイグレーション
-DBマイグレーションした時は、Herokuへの反映を忘れずに。コマンドは"heroku run rake db:migrate"
-さらにcloud9から初期データを投入したい場合は/db/seeds.rbに初期データを記述して、
-コマンド"heroku run rake db:seed"を実行。そうするとHerokuのDBにデータが投入される。
+■Heroku関連のコマンド
+heroku run rake db:migrate：DBマイグレーションした時は、Herokuへの反映を忘れずに。
+heroku run rake db:seed：cloud9から初期データを投入したい場合は/db/seeds.rbに初期データを記述して、コマンドを実行。そうするとHerokuのDBにデータが投入される。
+heroku run console：rails consoleと同じように、本番環境のDBをcloud9のターミナルで操作することができる。
 
 ■Railsのバージョンアップ方法
 https://www.udemy.com/ruby-on-rails-5-jp/
@@ -48,5 +48,11 @@ https://www.udemy.com/ruby-on-rails-5-jp/
 ・Fastly：アプリの拡張性を高めるコンテンツデリバリーネットワーク
 ・Auth0：統合的なID管理およびSSOプラットフォーム（FacebookやGooleのアカウントと連携可能） 　
 ・Heroku Scheduler：日、時間、10分単位で設計可能なスケジューラー
+
+■エラー
+事象：”UnknownAttributeError”と表示された。
+原因：DBのマイグレーションしていなかった＋なんかがおかしかったらしい
+対応：http://qiita.com/zucay/items/3b52b0fbc8b6c963c7e0　に記載の通り、”heroku restart”　でRailsを再起動
+
 
 EOF

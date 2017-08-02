@@ -12,6 +12,9 @@ gem 'rails_12factor', group: :production
 gem 'puma'
 ### K.Nakakita Add <<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+# パスワード暗号化用のgem
+gem 'bcrypt'
+  
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
