@@ -19,6 +19,7 @@ https://dashboard.heroku.com/apps/cebu-hk-002/deploy/github
 heroku run rake db:migrate：DBマイグレーションした時は、Herokuへの反映を忘れずに。
 heroku run rake db:seed：cloud9から初期データを投入したい場合は/db/seeds.rbに初期データを記述して、コマンドを実行。そうするとHerokuのDBにデータが投入される。
 heroku run console：rails consoleと同じように、本番環境のDBをcloud9のターミナルで操作することができる。
+heroku restart：railsの再起動
 
 ■Railsのバージョンアップ方法
 https://www.udemy.com/ruby-on-rails-5-jp/
