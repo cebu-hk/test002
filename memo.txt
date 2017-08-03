@@ -55,5 +55,4 @@ https://www.udemy.com/ruby-on-rails-5-jp/
 原因：DBのマイグレーションしていなかった＋なんかがおかしかったらしい
 対応：http://qiita.com/zucay/items/3b52b0fbc8b6c963c7e0　に記載の通り、”heroku restart”　でRailsを再起動
 
-
 EOF
